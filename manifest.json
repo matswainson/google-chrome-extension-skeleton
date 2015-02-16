@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+	"name": "Extension",
+	"version": "0.1",
+	"description": "Extension description",
+	"browser_action": {
+		"default_icon": {
+			"19": "static/img/icon19x19.png",
+			"38": "static/img/icon38x38.png"
+		},
+		"default_title": "Extension",
+		"default_popup": "static/html/popup.html"
+	},
+	"icons": {
+		"128": "static/img/icon128x128.png"
+	},
+	"background": {
+		"scripts": [
+			"static/js/libs/jquery.js",
+			"static/js/background.js"
+		]
+	},
+	"content_scripts": [{
+		"js": ["static/js/content-script.js"],
+		"matches": ["*://*/*"]
+	}]
+}

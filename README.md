@@ -1,2 +1,3 @@
-# google-chrome-extension-skeleton
-Google Chrome Extension Skeleton
+# Google Chrome Extension Skeleton
+
+Simple Google Chrome extension skeleton to help improve development workflow.
